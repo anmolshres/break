@@ -33,6 +33,12 @@ kbd {
   align-items: center;
 }
 
+#timeout-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #error {
   color: red;
 }
