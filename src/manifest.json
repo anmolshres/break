@@ -4,6 +4,7 @@
   "description": "Extension to pause the webpage with breakpoint",
   "permissions": [],
   "background": {
+    "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
