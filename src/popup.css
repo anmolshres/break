@@ -27,8 +27,12 @@ kbd {
   user-select: none;
 }
 
-form {
+#btn-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#error {
+  color: red;
 }
