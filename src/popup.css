@@ -42,3 +42,9 @@ kbd {
 #error {
   color: red;
 }
+
+#key-macro {
+  width: 20px;
+  height: 10px;
+  font-size: small;
+}
