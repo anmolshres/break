@@ -1,5 +1,5 @@
 body {
-  width: 540px;
+  width: 400px;
 }
 kbd {
   font-family: Consolas, 'Lucida Console', monospace;
@@ -13,7 +13,6 @@ kbd {
   background: #eee;
   font-weight: 500;
   color: #555;
-  cursor: pointer;
   font-variant: small-caps;
   font-weight: 600;
 
@@ -45,7 +44,8 @@ kbd {
   font-size: small;
 }
 
-#submit-btn {
+#submit-btn,
+#notice-btn {
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
@@ -54,4 +54,5 @@ kbd {
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
+  cursor: pointer;
 }
