@@ -8,7 +8,24 @@
     "persistent": false
   },
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icons/16.png",
+      "19": "images/icons/19.png",
+      "32": "images/icons/32.png",
+      "38": "images/icons/38.png",
+      "48": "images/icons/48.png",
+      "128": "images/icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icons/16.png",
+    "19": "images/icons/19.png",
+    "32": "images/icons/32.png",
+    "38": "images/icons/38.png",
+    "48": "images/icons/48.png",
+    "64": "images/icons/64.png",
+    "128": "images/icons/128.png"
   },
   "manifest_version": 2
 }
