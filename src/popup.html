@@ -4,16 +4,24 @@
     <title>break</title>
     <script src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="popup.css">
-  </head>
+    <meta charset="UTF-8">
+</head>
 
   <body style="width: 240px;">
+    <div id="intro">
+        <p>
+            break🔴 inserts <strong>debugger</strong> keyword in the current webpage. This means when you press a set combination of keys, it sets a breakpoint and halts the execution of the webpage😎.
+        </p>
+        <p>
+            Read more about <strong>debugger</strong> <a href="https://www.w3schools.com/jsref/jsref_debugger.asp" id="info">here</a>😀
+        </p>
+    </div>
     <p style="text-align: center;">
-      <kbd>Ctrl</kbd> +
+      <kbd>CTRL</kbd> +
         <input
           type="text"
           id="key-macro"
           name="search"
-          style="width: 20px;"
         />
         <div id="timeout-wrapper">
             <input id="timeout" name="timeout" type="number" min="0">
