@@ -29,6 +29,7 @@ Important Notes (Please read):
 8. Negative values in the number input field will be interpreted as 0
 
 # Screenshots
-
+1. Gmail paused
 ![Screenshot_1](src/images/screenshots/1.jpg)
+2. Popup
 ![Screenshot_2](src/images/screenshots/2.jpg)
