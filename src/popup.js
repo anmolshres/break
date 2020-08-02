@@ -1,5 +1,13 @@
+const visitInfoPage = (e) => {
+  e.preventDefault();
+  const url = `https://www.w3schools.com/jsref/jsref_debugger.asp`;
+  chrome.tabs.create({ url: url });
+};
+
 const initial = () => {
   const submitButton = document.getElementById('submit-btn');
+  const infoLink = document.getElementById('info');
+  infoLink.addEventListener('click', visitInfoPage);
   document.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
       submitButton.click();
