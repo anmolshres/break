@@ -15,7 +15,6 @@ const sendScript = (key) => {
                       setTimeout(function(){debugger;}, 0);
                   }
               });`;
-  console.log(key);
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     chrome.tabs.executeScript(tabs[0].id, {
       code: code,
@@ -26,7 +25,7 @@ const sendScript = (key) => {
 const handleSearchClick = (e) => {
   e.preventDefault();
   const errorElement = document.getElementById('error');
-  const key = document.getElementById('search-query').value;
+  const key = document.getElementById('key-macro').value;
   errorElement.innerHTML = '';
   if (key.length > 1) {
     errorElement.innerHTML = "The input can't be more than one character :)";
