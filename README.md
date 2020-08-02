@@ -30,5 +30,5 @@ Important Notes (Please read):
 
 # Screenshots
 
-![Screenshot_1](images/screenshots/1.jpg)
-![Screenshot_2](images/screenshots/2.jpg)
+![Screenshot_1](src/images/screenshots/1.jpg)
+![Screenshot_2](src/images/screenshots/2.jpg)
