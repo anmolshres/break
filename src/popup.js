@@ -14,12 +14,41 @@ const visitInfoPage = (e) => {
 };
 
 /**
+ * This function add the important notices when the button is clicked
+ * @param e event triggered on the button click
+ * @returns void
+ */
+const getNoticeInfo = (e) => {
+  e.preventDefault();
+  const noticePara = document.getElementById('notice-info');
+  noticePara.innerHTML = `
+        <b>1.</b> The Dev Console must be open on the webpage for this to work
+        <br />
+        <b>2.</b> The key press events are expected to come from the webpage's
+        body so make sure to switch to the context of the webpage by clicking on
+        any part of its body before triggering the debugger <br />
+        <b>3.</b> The default mode is active by default and needs no explicit
+        activation <br />
+        <b>4.</b> The default mode can't be overwritten <br />
+        <b>5.</b> Custom settings get eliminated as soon as you refresh the
+        webpage and don't persist across pages <br />
+        <b>6.</b> Any previous settings can't be overwritten unless the webpage
+        is refreshed (except the default) <br />
+        <b>7.</b> <kbd>SPACE</kbd> key can't be used for the key combos <br />
+        <b>8.</b> Negative values in the number input field will be interpreted
+        as 0
+  `;
+};
+
+/**
  * This function adds event listeners to the necessary elements as soon as the popup is loaded
  * @returns void
  */
 const initial = () => {
   const submitButton = document.getElementById('submit-btn');
   const infoLink = document.getElementById('info');
+  const noticeButton = document.getElementById('notice-btn');
+  noticeButton.addEventListener('click', getNoticeInfo);
   infoLink.addEventListener('click', visitInfoPage);
   submitButton.addEventListener('click', handleSearchClick);
   document.addEventListener('keypress', (e) => {
