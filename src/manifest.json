@@ -1,6 +1,6 @@
 {
   "name": "break🔴",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extension to pause the execution of any webpage with breakpoint",
   "permissions": ["tabs", "<all_urls>"],
   "background": {
