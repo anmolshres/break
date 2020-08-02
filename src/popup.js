@@ -37,7 +37,7 @@ const handleSearchClick = (e) => {
   const timeout = Number(document.getElementById('timeout').value);
   errorElement.innerHTML = '';
   if (key.length > 1) {
-    errorElement.innerHTML = "The input can't be more than one character :)";
+    errorElement.innerHTML = "The input can't be more than one character 😅";
   } else {
     sendScript(key, timeout);
   }
