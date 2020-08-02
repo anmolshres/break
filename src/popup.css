@@ -33,6 +33,10 @@ kbd {
   align-items: center;
 }
 
+#timeout {
+  width: 40px;
+}
+
 #timeout-wrapper {
   display: flex;
   justify-content: center;
