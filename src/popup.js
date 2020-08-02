@@ -8,11 +8,11 @@ const initial = () => {
   submitButton.addEventListener('click', handleSearchClick);
 };
 
-const sendScript = (key) => {
+const sendScript = (key, timeout) => {
   if (key === '' || key === ' ') return;
   const code = `document.addEventListener("keydown",(event) => {
                   if(event.ctrlKey && event.key === "${key}") {
-                      setTimeout(function(){debugger;}, 0);
+                      setTimeout(function(){debugger;},${timeout * 1000});
                   }
               });`;
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -26,11 +26,12 @@ const handleSearchClick = (e) => {
   e.preventDefault();
   const errorElement = document.getElementById('error');
   const key = document.getElementById('key-macro').value;
+  const timeout = Number(document.getElementById('timeout').value);
   errorElement.innerHTML = '';
   if (key.length > 1) {
     errorElement.innerHTML = "The input can't be more than one character :)";
   } else {
-    sendScript(key);
+    sendScript(key, timeout);
   }
 };
 
