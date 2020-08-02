@@ -3,33 +3,49 @@
   <head>
     <title>break</title>
     <script src="popup.js"></script>
-    <link rel="stylesheet" type="text/css" href="popup.css">
-    <meta charset="UTF-8">
-</head>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <meta charset="UTF-8" />
+  </head>
 
-  <body style="width: 240px;">
+  <body>
     <div id="intro">
-        <p>
-            break🔴 inserts <strong>debugger</strong> keyword in the current webpage. This means when you press a set combination of keys, it sets a breakpoint and halts the execution of the webpage😎.
-        </p>
-        <p>
-            Read more about <strong>debugger</strong> <a href="https://www.w3schools.com/jsref/jsref_debugger.asp" id="info">here</a>😀
-        </p>
+      <strong><u>About:</u></strong>
+      <p>
+        break🔴 inserts <strong>debugger</strong> keyword in the current
+        webpage. This means when you press a set combination of keys, it sets a
+        breakpoint and halts the execution of the webpage😎
+      </p>
+      <p>
+        Read more about <strong>debugger</strong>
+        <a href="https://www.w3schools.com/jsref/jsref_debugger.asp" id="info"
+          >here</a
+        >😀
+      </p>
     </div>
-    <p style="text-align: center;">
-      <kbd>CTRL</kbd> +
-        <input
-          type="text"
-          id="key-macro"
-          name="search"
-        />
-        <div id="timeout-wrapper">
-            <input id="timeout" name="timeout" type="number" min="0">
-        </div>
-        <div id="error"></div><br>
-      <div id="btn-wrapper">
-        <input type="submit" value="Activate" id="submit-btn" />
-      </div>
-    </p>
+    <div id="instructions">
+      <strong><u>Instructions:</u></strong>
+      <p>
+        <strong>1. Default mode</strong><br />
+        By default, pressing <kbd>CTRL</kbd> + <kbd>`</kbd> will activate the
+        debugger in any webpage with 0 seconds of timeout.
+      </p>
+      <p>
+        <strong>2. Custom mode</strong><br />
+        Contrarily, you could set your own key combo and timeout to trigger the
+        debugger break. <br />
+        Press <kbd>CTRL</kbd> +
+        <input type="text" id="key-macro" name="search" /> to trigger debugger
+        in <input id="timeout" name="timeout" type="number" min="0" /> seconds.
+        <br />
+        <br />
+        <input type="submit" value="Click here" id="submit-btn" /> or press
+        <kbd>ENTER</kbd> key to activate this setting.
+      </p>
+    </div>
+    <div id="notice">
+      <strong><u>Important Notes:</u></strong>
+      <p></p>
+    </div>
+    <div id="error"></div>
   </body>
 </html>
